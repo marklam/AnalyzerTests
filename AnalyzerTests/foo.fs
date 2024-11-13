@@ -1,5 +1,17 @@
 module Foo
 
+type SingleCaseDU = | One of int[]
+type TwoCaseDU = | Empty | Full of int[]
+
+type DataspaceDimensions<[<Measure>] 'd> =
+    | Dims of uint64[]
+
+type IDirectoryInfo = interface end
+type ILoggerProvider = interface end
+type Group =
+    | ReadOnlyGroup of (ILoggerProvider * IDirectoryInfo)
+    | ReadWriteGroup of (ILoggerProvider * IDirectoryInfo)
+
 [<Struct>]
 type QTPoint<[<Measure>]'x,[<Measure>]'y> = { X: float<'x>; Y: float<'y> }
 
