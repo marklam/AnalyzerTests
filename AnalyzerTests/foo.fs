@@ -1,3 +1,5 @@
+module Foo
+
 [<Struct>]
 type QTPoint<[<Measure>]'x,[<Measure>]'y> = { X: float<'x>; Y: float<'y> }
 
