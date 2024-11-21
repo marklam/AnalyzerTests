@@ -2,4 +2,4 @@ STORAGE: NONE
 NUGET
   remote: https://api.nuget.org/v3/index.json
     FSharp.Core (9.0.100)
-    Ionide.Analyzers (0.12) - storage: packages
+    Ionide.Analyzers (0.13) - storage: packages
